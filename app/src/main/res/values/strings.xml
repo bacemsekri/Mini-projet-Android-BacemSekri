@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Newsletter</string>
+    <string name="category">Catégorie</string>
+    <string name="editors">Editeurs</string>
+    <string name="country">Pays</string>
+    <string name="all">Tout</string>
+    <string name="entertainment">People</string>
+    <string name="business">Économie</string>
+    <string name="general">Général</string>
+    <string name="health">Santé</string>
+    <string name="sciences">Sciences</string>
+    <string name="sports">Sport</string>
+    <string name="technology">Tech</string>
+    <string name="separator">•</string>
+    <string name="no_internet_error">Serveur de news inaccessible, veuiller vérifier votre connexion internet</string>
+    <string name="request_error">Une erreur s\'est produite, merci de réessayer ultérieurement</string>
+    <string name="retry">Réessayer</string>
+    <string name="by">Par</string>
+    <string name="read_all">Lire l\'article complet</string>
+    <string name="results">Résultats</string>
+    <string name="select_country">Sélectionner le pays</string>
+    <string name="select_editors">Sélectionner les éditeurs</string>
+    <string name="show_articles">Voir les articles</string>
+    <string name="favorites">Favoris</string>
+    <string name="add_to_favorites">Ajouter aux favoris</string>
+    <string name="about_us">À propos de nous</string>
+</resources>

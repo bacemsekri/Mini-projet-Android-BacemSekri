@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="category"
+            type="com.mbds.bmp.newsletter.model.Category" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/category_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:checkable="true"
+        android:checked="@{category.active}"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/category_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxHeight="50dp"
+                android:src="@drawable/placeholder_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/category_name"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/category_image"
+                app:layout_constraintEnd_toEndOf="@id/category_image"
+                app:layout_constraintStart_toStartOf="@id/category_image"
+                app:layout_constraintTop_toTopOf="@id/category_image"
+                tools:text="Category" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

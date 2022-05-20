@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="country"
+            type="com.mbds.bmp.newsletter.model.Country" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/country_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:checkable="true"
+        android:checked="@{country.active}"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/country_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:maxHeight="10dp"
+                android:paddingHorizontal="2dp"
+                android:src="@drawable/world"
+                app:layout_constraintEnd_toStartOf="@id/country_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/country_name"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:paddingHorizontal="2dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/country_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.75"
+                tools:text="Category" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
